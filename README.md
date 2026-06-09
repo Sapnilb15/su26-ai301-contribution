@@ -1,5 +1,3 @@
-# su26-ai301-contribution
-
 # Contribution 1: Cannot select recurrence option with keyboard
 
 **Contribution Number:** 1

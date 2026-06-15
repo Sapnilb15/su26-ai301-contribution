@@ -23,7 +23,7 @@ documentation and an active contributor community, which will help me move
 quickly in Phase II.
 
 
-##Understand: The recurrence form has two keyboard accessibility bugs:
+## Understand: The recurrence form has two keyboard accessibility bugs:
 (1) WeekDay toggle buttons (S/M/T/W/T/F/S) can't be activated via 
 Space/Enter, (2) the "Every" interval CaretInput ignores keyboard input.
 

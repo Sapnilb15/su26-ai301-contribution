@@ -22,10 +22,25 @@ React/TypeScript stack matches my experience. The project has excellent setup
 documentation and an active contributor community, which will help me move 
 quickly in Phase II.
 
+## Steps to Reproduce
+1. Open the event creation form by clicking on the calendar grid
+2. Enter an event title and enable recurrence
+3. Press Tab to navigate to the day-of-week buttons (S/M/T/W/T/F/S)
+4. Press Space or Enter to toggle a day — nothing happens
+5. Press Tab to reach the "Every [number]" interval field
+6. Attempt to type or use arrow keys — nothing happens
+
+## Environment Setup
+Had to manually run bun add in packages/web, packages/core, and 
+packages/backend for missing deps: zod, immer (downgraded to v9.0.21), 
+clsx, rrule, eventemitter2, @redux-saga/core, bson, lodash.mergewith, 
+gaxios, express, mongoose. Deleted bun.lockb to force fresh install.
+
 
 ## Understand: The recurrence form has two keyboard accessibility bugs:
 (1) WeekDay toggle buttons (S/M/T/W/T/F/S) can't be activated via 
 Space/Enter, (2) the "Every" interval CaretInput ignores keyboard input.
+
 
 Match: FreqSelect.tsx works with keyboard — compare its implementation 
 to WeekDay.tsx and CaretInput.tsx to find what keyboard handlers are missing.
@@ -40,7 +55,7 @@ Plan:
 4. Add visible focus styles using existing Tailwind focus classes
 5. Write tests in RecurrenceSection.test.tsx .
 
-Implement: [link to fix-issue-1326 branch]
+Implement: https://github.com/sapnilb15/su26-ai301-contribution/fix-issue-1326
 
 Review: Check CONTRIBUTING.md for PR conventions
 

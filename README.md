@@ -38,7 +38,7 @@ Plan:
 3. Open RecurringEventUpdateScopeDialog.tsx — add Tab/Enter/Space/Escape 
    keyboard navigation using floating-ui a11y utilities (per maintainer hint)
 4. Add visible focus styles using existing Tailwind focus classes
-5. Write tests in RecurrenceSection.test.tsx
+5. Write tests in RecurrenceSection.test.tsx .
 
 Implement: [link to fix-issue-1326 branch]
 
